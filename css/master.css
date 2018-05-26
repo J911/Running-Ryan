@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Jua');
+        body {
+            background-color: rgb(246, 222, 0);
+            font-family: 'Jua', sans-serif;
+        }
+        .header {
+            text-align: center;
+            color: rgb(133, 95, 7);
+            transform: rotate(-20deg);
+            font-size: 2.5rem;
+            margin-top: 60px;
+        }
+        .header span {
+            font-size: 1rem;
+            color: rgb(197, 138, 0);
+        }
+        #ryan {
+            width: 50px;
+            height: 50px;
+
+            position: fixed;
+            left:20%;
+            top: 50%;
+            margin-left: -25px;
+            margin-top: -25px;
+
+            background-image: url('../img/dog.gif');
+            background-size: cover;
+        }
+
+        .btn { 
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            cursor: pointer;
+
+            position: fixed;
+            bottom: 0;
+            
+            color: gray;
+            font-weight: 800;
+            line-height: 100px;
+            text-align: center;
+            
+            margin: 20px;
+        }
+        #rolling_btn {
+            left: 0;
+        }
+        #jump_btn {
+            right: 0;
+        }
+
+        #map {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 20%;
+            bottom: 50%;
+            margin-bottom: -25px;
+        }
+        #map .obstacle {
+            position: absolute;
+            bottom: 0px;
+            width: 50px;
+            height: 50px;
+            right: 20px;
+            background-image: url('./neo.gif');
+            background-size: cover;
+        }
+
+        #score {
+            position: fixed;
+            color: rgba(255, 255, 255, 0.5);
+            bottom: 150px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 2.5rem;
+        }
