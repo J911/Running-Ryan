@@ -121,8 +121,8 @@ var Obstacle = function () {
                 var y = _this3.obstacle.offsetTop;
 
                 var r_x = _this3.ryan.target.offsetLeft;
-                var r_y = _this3.ryan.target.offsetTop - 115;
-
+                var r_y = _this3.ryan.target.offsetTop;
+                
                 if (Math.abs(x - r_x) < 10 && Math.abs(y - r_y) < 10) _this3.game.stop();
             }, 10);
             this.action.addEventListener('finish', function () {

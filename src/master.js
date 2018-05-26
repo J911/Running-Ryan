@@ -90,7 +90,7 @@ class Obstacle {
             const y = this.obstacle.offsetTop
 
             const r_x = this.ryan.target.offsetLeft
-            const r_y = this.ryan.target.offsetTop - 115
+            const r_y = this.ryan.target.offsetTop
             
             if(Math.abs(x - r_x) < 10 && Math.abs(y - r_y) < 10)     
                 this.game.stop()
