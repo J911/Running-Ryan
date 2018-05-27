@@ -21,7 +21,7 @@ class Game {
             this.obstacles.push(
                 new Obstacle(this.map, this, this.ryan, this.opt)
             )
-        },4000)
+        }, this.opt.OBSTACLE_CYCLE)
         
     }
     stop() {
@@ -60,7 +60,6 @@ class Obstacle {
         this.game = game
         this.ryan = ryan
         this.speed = opt.OBSTACLE_SPEED || 1000
-        this.appendCycle = opt.OBSTACLE_CYCLE || 3000
         this.obstacle = document.createElement('div')
         this.obstacle.className = 'obstacle'
         this.setCharacter()
@@ -103,7 +102,7 @@ class Obstacle {
     }
     appendMap() {
         this.map.appendChild(this.obstacle)
-        this.move(this.appendCycle)
+        this.move(this.speed)
     }
     
 }

@@ -36,7 +36,7 @@ var Game = function () {
             }, 100);
             this.addObstacle = setInterval(function () {
                 _this.obstacles.push(new Obstacle(_this.map, _this, _this.ryan, _this.opt));
-            }, 4000);
+            }, _this.opt.OBSTACLE_CYCLE || 3000);
         }
     }, {
         key: 'stop',
@@ -90,7 +90,6 @@ var Obstacle = function () {
         this.game = game;
         this.ryan = ryan;
         this.speed = opt.OBSTACLE_SPEED || 1000;
-        this.appendCycle = opt.OBSTACLE_CYCLE || 3000;
         this.obstacle = document.createElement('div');
         this.obstacle.className = 'obstacle';
         this.setCharacter();
@@ -135,7 +134,7 @@ var Obstacle = function () {
         key: 'appendMap',
         value: function appendMap() {
             this.map.appendChild(this.obstacle);
-            this.move(this.appendCycle);
+            this.move(this.speed);
         }
     }]);
 
