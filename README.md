@@ -3,6 +3,10 @@
 
 [게임하기](https://j911.me/Running-Ryan/)
 
+## 캐릭터 저작권자
+![Dog And Cats](./img/DogAndCat.png)
+- 강아지와 고양이 [우지선](mailto:jswoo0921@gmail.com)
+ 
 ## 저작권..
 사실은 카카오프랜즈의 귀여운 라이언이 달리는게임이였지만,
 저작권문제로 이미지를 올리지 못하였다..
