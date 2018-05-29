@@ -2,13 +2,20 @@
         body {
             background-color: rgb(246, 222, 0);
             font-family: 'Jua', sans-serif;
+            overflow: hidden;
+        }
+        .wrapper {
+            position: relative;
+            width: 400px;
+            height: 100vh;
+            margin: 0 auto;
         }
         .header {
             text-align: center;
             color: rgb(133, 95, 7);
             transform: rotate(-20deg);
             font-size: 2.5rem;
-            margin-top: 60px;
+            padding-top: 60px;
         }
         .header span {
             font-size: 1rem;
@@ -18,7 +25,7 @@
             width: 50px;
             height: 50px;
 
-            position: fixed;
+            position: absolute;
             left:20%;
             top: 50%;
             margin-left: -25px;
@@ -35,7 +42,7 @@
             border-radius: 50%;
             cursor: pointer;
 
-            position: fixed;
+            position: absolute;
             bottom: 0;
             
             color: gray;
@@ -64,7 +71,7 @@
         }
 
         #score {
-            position: fixed;
+            position: absolute;
             color: rgba(255, 255, 255, 0.5);
             bottom: 150px;
             left: 0;
