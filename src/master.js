@@ -68,12 +68,16 @@ class Obstacle {
     setCharacter() {
         const obstacleObject = [
             {
-                name: 'dog1',
-                url: './img/dog2.png'
-            },
+                name: 'muzi',
+                url: './img/muzi.gif'
+            }, 
             {
-                name: 'dog2',
-                url: './img/dog3.png'
+                name: 'neo',
+                url: './img/neo.gif'
+            }, 
+            {
+                name: 'ryan',
+                url: './img/ryan.gif'
             }
         ]
         const random = Math.floor(Math.random() * 10) % 2
